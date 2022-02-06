@@ -9,7 +9,8 @@ object Libraries {
 
     //Koin
     const val koin = "io.insert-koin:koin-android:${Versions.koin}"
-    const val koinViewModel = "io.insert-koin:koin-androidx-viewmodel:${Versions.koinViewModel}"
+
+    //    const val koinViewModel = "io.insert-koin:koin-androidx-viewmodel:${Versions.koinViewModel}"
     const val koinTest = "io.insert-koin:koin-test:${Versions.koin}"
 
     //ViewPager
@@ -61,9 +62,21 @@ object Libraries {
     const val firebaseAuth = "com.google.firebase:firebase-auth-ktx:21.0.1"
     const val firebaseAuthSignInGoogle = "com.google.android.gms:play-services-auth:20.0.1"
 
+    //Hilt
+    const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
+    const val hiltAndroidCompiler =
+        "com.google.dagger:hilt-android-compiler:${Versions.hiltVersion}"
+    const val hiltGradlePlugin =
+        "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
+    const val hiltCompose = "androidx.hilt:hilt-navigation-compose:${Versions.hiltComposeVersion}"
+    const val hiltAndroidGoogle = "androidx.hilt:hilt:1.0.0"
+    const val hiltAndroidXCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltVersion}"
+
 }
 
 object Versions {
+    const val hiltComposeVersion = "1.0.0"
+    const val hiltVersion = "2.40.5"
     const val dataBindingValidator = "2.0.0"
     const val roomDb = "2.4.1"
     const val koin = "3.1.5"

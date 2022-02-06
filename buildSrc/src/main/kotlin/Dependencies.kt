@@ -27,7 +27,7 @@ fun DependencyHandler.roomDb() {
 
 fun DependencyHandler.koin() {
     add("implementation", Libraries.koin)
-    add("implementation", Libraries.koinViewModel)
+//    add("implementation", Libraries.koinViewModel)
     add("implementation", Libraries.koinTest)
 }
 
@@ -70,6 +70,16 @@ fun DependencyHandler.firebase(
         add(configurationType.value, Libraries.firebaseAuthSignInGoogle)
     }
 //    add("implementation", "com.google.firebase:firebase-ml-vision:24.1.0")
+}
+
+fun DependencyHandler.hilt(configurationType: ConfigurationType, withCompose: Boolean = false) {
+    add(configurationType.value, Libraries.hiltAndroid)
+    if (withCompose) {
+        add(configurationType.value, Libraries.hiltCompose)
+    }
+//    add(configurationType.value, Libraries.hiltAndroidGoogle)
+    add("kapt", Libraries.hiltAndroidCompiler)
+//    add("kapt", Libraries.hiltAndroidXCompiler)
 }
 
 enum class ConfigurationType(val value: String) {

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">My App</string>
+    <string name="app_name">Receitas App</string>
+    <string name="login_bt_login">Entrar</string>
+    <string name="login_bt_login_with_goole">Login com Google</string>
+    <string name="login_bt_register">Quero me Cadastrar!</string>
+    <string name="login_bt_recovery_password">Esqueci minha senha</string>
 </resources>
