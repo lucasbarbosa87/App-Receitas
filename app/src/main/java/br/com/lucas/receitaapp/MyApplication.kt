@@ -1,4 +1,4 @@
-package br.com.mercury.myapp
+package br.com.lucas.receitaapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

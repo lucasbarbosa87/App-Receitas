@@ -1,4 +1,4 @@
-package br.com.mercury.myapp.ui.splash
+package br.com.lucas.receitaapp.ui.splash
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

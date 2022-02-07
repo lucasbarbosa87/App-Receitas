@@ -1,4 +1,4 @@
-package br.com.mercury.myapp.ui.login.compose
+package br.com.lucas.receitaapp.ui.login.compose
 
 import android.content.Context
 import android.widget.Toast
@@ -27,7 +27,6 @@ import androidx.compose.material.TextButton
 import androidx.compose.material.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
@@ -41,7 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import br.com.mercury.myapp.R
-import br.com.mercury.myapp.ui.theme.ReceitasAppTheme
+import br.com.lucas.receitaapp.ui.theme.ReceitasAppTheme
 
 @Composable
 fun LoginView(context: Context) = ReceitasAppTheme {

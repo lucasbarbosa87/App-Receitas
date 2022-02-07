@@ -1,4 +1,4 @@
-package br.com.mercury.myapp.ui.splash
+package br.com.lucas.receitaapp.ui.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.defaultMinSize
@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import br.com.mercury.myapp.R
-import br.com.mercury.myapp.ui.theme.ReceitasAppTheme
+import br.com.lucas.receitaapp.ui.theme.ReceitasAppTheme
 
 @Composable
 @Preview

@@ -4,4 +4,10 @@
     <string name="login_bt_login_with_goole">Login com Google</string>
     <string name="login_bt_register">Quero me Cadastrar!</string>
     <string name="login_bt_recovery_password">Esqueci minha senha</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_recipe">Receitas</string>
+    <string name="menu_favorite">Favoritos</string>
+    <string name="menu_account">Conta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

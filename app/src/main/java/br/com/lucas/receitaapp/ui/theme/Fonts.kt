@@ -1,4 +1,4 @@
-package br.com.mercury.myapp.ui.theme
+package br.com.lucas.receitaapp.ui.theme
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily

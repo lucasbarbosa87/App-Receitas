@@ -1,4 +1,4 @@
-package br.com.mercury.myapp.di
+package br.com.lucas.receitaapp.di
 
 import dagger.Module
 import dagger.hilt.InstallIn

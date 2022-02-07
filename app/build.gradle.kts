@@ -30,6 +30,14 @@ android {
         }
     }
 
+    viewBinding {
+        isEnabled = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.1.0-rc03"
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = true
@@ -70,6 +78,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
     implementation("androidx.activity:activity-compose:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.0")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
@@ -92,3 +101,4 @@ dependencies {
     implementation(Libraries.viewPager2)
     implementation(Libraries.gson)
 }
+
