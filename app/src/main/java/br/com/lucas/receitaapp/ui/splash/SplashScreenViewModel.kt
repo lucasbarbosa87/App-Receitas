@@ -3,13 +3,10 @@ package br.com.lucas.receitaapp.ui.splash
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class SplashScreenViewModel @Inject constructor(
+class SplashScreenViewModel(
     application: Application
 ) : AndroidViewModel(application) {
 

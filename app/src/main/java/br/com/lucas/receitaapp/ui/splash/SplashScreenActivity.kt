@@ -1,19 +1,15 @@
 package br.com.lucas.receitaapp.ui.splash
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
-import androidx.activity.viewModels
 import br.com.lucas.receitaapp.ui.base.BaseActivity
 import br.com.lucas.receitaapp.ui.main.MainActivity
-import dagger.hilt.android.AndroidEntryPoint
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@SuppressLint("CustomSplashScreen")
-@AndroidEntryPoint
 class SplashScreenActivity : BaseActivity() {
 
-    private val viewModel: SplashScreenViewModel by viewModels()
+    private val viewModel: SplashScreenViewModel by viewModel()
 
     override var isCompose: Boolean = true
 

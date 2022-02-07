@@ -15,7 +15,8 @@
             android:exported="true" />
         <activity
             android:name="br.com.lucas.receitaapp.ui.splash.SplashScreenActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.ReceitasApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

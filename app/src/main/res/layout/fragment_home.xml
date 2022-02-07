@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/home_input_search"
             style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
             android:layout_width="0dp"
@@ -18,28 +18,27 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="4dp"
-            android:background="@color/black"
             app:layout_constraintEnd_toStartOf="@id/home_ib_search"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/home_et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <ImageButton
             android:id="@+id/home_ib_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
+            android:contentDescription=""
             android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@id/home_input_search"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/home_input_search" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_rv_category"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="4dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_input_search" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_rv_hot"
@@ -49,7 +48,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_rv_category" />
+            app:layout_constraintTop_toBottomOf="@id/home_input_search" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -10,7 +10,6 @@ plugins {
     id("kotlin-parcelize")
     id("kotlin-kapt")
     id("com.github.ben-manes.versions") version "0.41.0"
-    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -93,12 +92,15 @@ dependencies {
     retrofit(ConfigurationType.Implementation)
     paging(ConfigurationType.Implementation)
     firebase(ConfigurationType.Implementation, true)
-    hilt(ConfigurationType.Implementation, true)
+    koin()
 
     implementation(guava)
     implementation(Libraries.workManager)
     implementation(Libraries.jodaTime)
     implementation(Libraries.viewPager2)
     implementation(Libraries.gson)
+
+    implementation("com.facebook.stetho:stetho:1.5.1")
+    implementation("com.facebook.stetho:stetho-okhttp3:1.5.1")
 }
 
